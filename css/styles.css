@@ -1,0 +1,94 @@
+div#background{
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #aaaa88; /* For browsers that do not support gradients */
+    background: -webkit-radial-gradient(#efefab, #aaaa88); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(#efefab, #aaaa88); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(#efefab, #aaaa88); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(#efefab, #aaaa88); /* Standard syntax (must be last) */
+
+    /* background-image: url('../img/tuzi2.jpeg'); */
+    background-attachment: fixed;
+    /*background-image: url('../img/background.jpg') no-repeat center center fixed;*/
+    /* kbackground-size: cover; */
+    /* -webkit-background-size: cover; */
+    /* -moz-background-size: cover; */
+    /* -o-background-size: cover; */
+    background-size: 100% 100%;
+    kbackground-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    min-width: 100%;
+    min-height: 100%;
+    text-align:center;
+    opacity : 1.0;
+    z-index: -1;
+}
+div#background_transparent{
+    margin: 0 auto;
+    width: 90%;
+    min-height: 100%;
+    /* background-color: black; */
+    opacity: 0.8;
+    background-size: 100% 100%;
+    kbackground-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+}
+div#content{
+    opacity: 0.6;
+    background-color: white;
+    z-index: 2;
+    position: relative;
+}
+
+/* For webpage preview */
+#preview{
+    display: table-cell;
+}
+
+/* For the result page preview column to have the same height */
+[class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+}
+
+div.result {
+    font-size: 16px;
+    border-radius: 25px;
+    background: #EEEEFF;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+}
+
+h2.result_title {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+div.wordwrap {
+    max-width: 450px;
+    white-space: pre-wrap; /* css-3 */
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+li {
+    font-size:1.5em;
+    font-weight:bold;
+    min-width:50%;
+    padding-top:0.2em;
+    padding-bottom:0.2em;
+}
+
