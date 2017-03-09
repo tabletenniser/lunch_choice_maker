@@ -72,7 +72,8 @@ def display():
 @route('/lunch_choice_maker')
 def display():
     today = datetime.datetime.today()
-    secrete_num = today.year*2000+today.month*100+today.day
+    today_time_tuple = today.timetuple()
+    secrete_num = today_time_tuple.tm_year*366+today_time_tuple.tm_yday
     secrete_file_name = './random_gens/'+str(secrete_num)
 
     lunch = ''
@@ -91,7 +92,7 @@ def display():
         if today.weekday() == 3:
             choice = 0
         else:
-            choice = (today.day) % (len(lunch_choices)-1)+1
+            choice = (secrete_num) % (len(lunch_choices)-1)+1
             random_num = random.randint(0,2)
             choice += random_num
 
