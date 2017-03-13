@@ -50,7 +50,7 @@
             {{ !lunch_options }}
 
             <br/><br/>
-            <p style="font-size:1.5em;">Add New Lunch Options:</p>
+            <p style="font-size:1.5em;">Add New Lunch Option:</p>
             <form action="add_lunch_choice" method="post" style="font-size: 1.5em; text-align:center; width:80%; margin:0 auto;">
             <input type="text" name="restaurant" style="width:100%;">
             <input class="btn btn-info" type="submit" value="Submit" style="margin-top:20px;">
